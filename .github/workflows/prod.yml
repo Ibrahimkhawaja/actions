@@ -1,6 +1,9 @@
 name: CI
 
 on:
+  pull_request:
+    branches:
+      - main
   workflow_dispatch:
     inputs:
       BRANCH:
@@ -19,3 +22,4 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+          sleep 300
