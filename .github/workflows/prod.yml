@@ -15,8 +15,8 @@ concurrency:
   
 jobs:
   build:
-    concurrency:
-      group: test-ci
+#    concurrency:
+#      group: test-ci
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
