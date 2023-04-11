@@ -28,4 +28,5 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-          sleep 300
+          echo branch: ${{github.ref}}
+          #sleep 300
